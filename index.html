@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./src/assets/title-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="dark:bg-dark min-h-[300vh]">
+    <div
+      class="bg-primary text-[#670A18] text-center py-2.5 dark:bg-violet-950 dark:text-white max-lg:hidden"
+    >
+      <p class="text-xs">
+        SHIPPING AND RETURNS ARE ALWAYS FREE FROM OUR PLACE TO YOURS 🙂
+      </p>
+    </div>
+    <header class="sticky top-0 left-0 z-50 bg-white dark:bg-dark2">
+      <nav
+        class="container flex h-[82px] justify-between items-center relative dark:text-white"
+      >
+        <div class="flex gap-8 uppercase font-bold text-[13px] max-md:hidden">
+          <a href="#">
+            <span>Shop</span>
+          </a>
+          <a href="#">
+            <span>Always Pan</span>
+          </a>
+        </div>
+        <div class="absolute max-md:static left-1/2 md:-translate-x-1/2">
+          <img
+            src="./src/assets/logo-wight.svg"
+            class="max-md:w-24 hidden dark:block"
+            alt=""
+          />
+          <img
+            src="./src/assets/logo.svg"
+            class="max-md:w-24 block dark:hidden"
+            alt=""
+          />
+        </div>
+        <div
+          class="flex items-center gap-8 uppercase font-bold text-[13px] max-md:hidden"
+        >
+          <a href="#">
+            <span>Mission</span>
+          </a>
+          <a href="#">
+            <span>FAQs</span>
+          </a>
+          <button
+            onclick="darkMode()"
+            class="size-9 flex items-center justify-center text-white dark:bg-amber-950 bg-[#C87B5E] rounded-full duration-200"
+            href="#"
+          >
+            <div class="block dark:hidden">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="hidden dark:block">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+          </button>
+        </div>
+        <button class="hidden max-md:block">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- hero  -->
+      <section
+        class="h-[604px] flex items-center pl-[22%] max-md:pl-4 max-[500px]:h-[450px] relative"
+      >
+        <img
+          src="./src/assets/hero.png"
+          alt=""
+          class="absolute top-0 left-0 dark:brightness-50 w-full h-full object-cover"
+        />
+        <div
+          class="dark:text-white relative max-[500px]:transform max-[500px]:translate-y-[33%]"
+        >
+          <p class="uppercase max-[500px]:text-sm">Meet The Always Pan</p>
+          <h1 class="text-[50px] max-[500px]:text-4xl mb-14 mt-2">
+            Your new <br />
+            <span class="border-b-2">skillet</span>
+          </h1>
+          <button
+            class="py-5 px-10 max-[500px]:py-3 max-[500px]:px-7 max-[500px]:font-semibold bg-[#D37657] uppercase text-white text-sm max-[500px]:text-xs font-bold rounded-[2px] hover:bg-amber-800 duration-200"
+          >
+            Shop the Always Pan
+          </button>
+        </div>
+      </section>
+      <!-- brands  -->
+       <section class="min-h-[212px] bg-primary dark:bg-dark2 py-5">
+        <div class="container h-full flex justify-center items-center flex-col gap-7">
+          <h2 class="font-bold text-[18px] md:text-2xl text-center uppercase dark:text-white">"Doing the job of eight traditional cookware  <br>pieces"</h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-[113px] place-items-center">
+            <img src="./src/assets/brands logo (4).svg" alt="" class="dark:invert dark:brightness-0"/>
+            <img src="./src/assets/brands logo (3).svg" alt="" class="dark:invert dark:brightness-0"/>
+            <img src="./src/assets/brands logo (2).svg" alt="" class="dark:invert dark:brightness-0"/>
+            <img src="./src/assets/brands logo (1).svg" alt="" class="dark:invert dark:brightness-0"/>
+          </div>
+        </div>
+       </section>
+    </main>
+
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>
